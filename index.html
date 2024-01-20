@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title></title>
+</head>
+<body>
+  <div id="container" class="container">
+    <div id="expression">
+      
+    </div>
+    <div id="standard-buttons" class="container-fluid">
+      <div class="row button-row">
+        <div class="col-xs-1">
+          <button id="clear" class="btn button-orange" title="Clear all">AC</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="delete" class="btn button-orange" title="Delete">DEL</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="percent"  class="btn button-blue" title="9">%</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-divide" class="btn button-blue" title="Divide">÷</button>
+        </div>
+
+      </div>
+      <div class="row button-row">
+        <div class="col-xs-1">
+          <button id="num-7" class="btn num" title="7">7</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="num-8"  class="btn num" title="8">8</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="num-9"  class="btn num" title="9">9</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-multiply" class="btn button-blue" title="Multiply">x</button>
+        </div>
+      </div>
+      <div class="row button-row">
+        <div class="col-xs-1">
+          <button id="num-4"  class="btn num" title="4">4</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="num-5"  class="btn num" title="5">5</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="num-6"  class="btn num" title="6">6</button>
+        </div>
+        
+        <div class="col-xs-1">
+          <button id="op-subtract" class="btn button-blue" title="Subtract">-</button>
+        </div>
+
+      </div>
+      <div class="row button-row">
+        <div class="col-xs-1">
+          <button id="num-1"  class="btn num" title="1">1</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="num-2"  class="btn num" title="2">2</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="num-3"  class="btn num" title="3">3</button>
+        </div>
+        
+        <div class="col-xs-1">
+          <button id="op-add" class="btn button-blue" title="Add">+</button>
+        </div>
+      </div>
+      <div class="row button-row">
+        <div class="col-xs-1">
+          <button id="num-0" class="btn num" title="0">0</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-square-root" class="btn" title="Square root">√</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="period" class="btn" title="Decimal point">.</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="equals" class="btn button-danger" title="Equals">=</button>
+        </div>
+        
+        <!-- <div class="col-xs-1">
+          <button id="toggle-advanced" class="btn button-off" title="Toggle advanced panel"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+        </div> -->
+      </div>
+    </div>
+    <!-- <div id="calc-history">
+      <span>Calculation history</span>
+      <hr>
+      <div id="calc-history-box">
+        
+      </div>
+    </div> -->
+    <div id="advanced-buttons" class="container-fluid">
+      <div class="row button-row">
+        <div class="col-xs-1">
+          <button id="op-power" class="btn" title="Exponentiate">^</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="num-pi" class="btn num" title="Pi">π</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-inverse-sin" class="btn" title="Inverse sine">asin</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-inverse-cos" class="btn" title="Inverse cosine">acos</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-inverse-tan" class="btn" title="Inverse tangent">atan</button>
+        </div>
+      </div>
+      <div class="row button-row">
+        <div class="col-xs-1">
+          <button id="op-square-root" class="btn" title="Square root">√</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-nth-root" class="btn" title="nth root">x*√</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-sin" class="btn" title="Sine">sin</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-cos" class="btn" title="Cosine">cos</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-tan" class="btn" title="Tangent">tan</button>
+        </div>
+      </div>
+      <div class="row button-row">
+        <div class="col-xs-1">
+          <button id="op-log" class="btn" title="Log base 10">log</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-natural-log" class="btn" title="Natural log (base e)">ln</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="op-e" class="btn" title="Exponential function">e^x</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="bracket-left" class="btn" title="Open bracket">(</button>
+        </div>
+        <div class="col-xs-1">
+          <button id="bracket-right" class="btn" title="Closed bracket">)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
