@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+  const seed = "b3RwYXV0aDovL3RvdHAvR2l0SHViJTNBY2xpbWF4LXNvbHV0aW9uP3NlY3JldD1FTFlLUFJaVE5BWVFPVExEJmlzc3Vlcj1HaXRIdWI="
   // A database of the symbols and functions of every operand. Order of operators determines precedence.
   var operators = [
     {
